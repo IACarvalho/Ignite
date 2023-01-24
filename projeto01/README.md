@@ -1,5 +1,5 @@
 # Anotaçōes
-* para habilitar import/export basta adicionar ```json "type": "modules"``` no package.json
+* para habilitar import/export basta adicionar ```"type": "modules"``` no package.json
 * para o servidor funcionar com hotreload basta passar a flag --watch
 
 ## Rotas HTTP
@@ -11,3 +11,12 @@
 * **PATCH** -> Atualizando uma informação especifica de um recurso no back-end
 * **DELETE** -> Deleta um recurso no back-end
 * Cabeçalho (request:response) -> metadados
+* Dentor do cabeçalho posso passar informações, por exemplo, que espero receber um json como resposta, assim retornando já formatado.
+
+## HTTP Status code
+* Servem para dizer se a requisição foi bem sucedida ou se falhou
+* **100 - 199** -> Respostas informacionais, não necessariamente quer dizer sucesso ou falha
+* **200 - 299** -> Resposta de sucesso
+* **300 - 399** -> Resposta de redirecionamento
+* **400 - 499** -> Resposta de *client error* (erro no lado do cliente)
+* **500 - 599** -> Resposta de *server error* (erro do lado do servidor)
