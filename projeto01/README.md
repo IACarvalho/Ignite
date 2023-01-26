@@ -20,3 +20,8 @@
 * **300 - 399** -> Resposta de redirecionamento
 * **400 - 499** -> Resposta de *client error* (erro no lado do cliente)
 * **500 - 599** -> Resposta de *server error* (erro do lado do servidor)
+
+## Streaming
+* Streaming basicamente é começar a trabalhar nos dados de um arquivo mesmo antes de terminar de baixar ou de subir o arquivo por completo
+* Toda porta de entrada e saída é uma stream. Toda rota tem *request* e *response*
+* Request pode ser entendido como uma readable stream e o response como uma writeable stream
