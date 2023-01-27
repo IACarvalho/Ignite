@@ -25,3 +25,8 @@
 * Streaming basicamente é começar a trabalhar nos dados de um arquivo mesmo antes de terminar de baixar ou de subir o arquivo por completo
 * Toda porta de entrada e saída é uma stream. Toda rota tem *request* e *response*
 * Request pode ser entendido como uma readable stream e o response como uma writeable stream
+
+## Buffer
+* É uma representação de um espaço na memória do computador usado para transitar dados de maneira muito rápida (achei parecido com ponteiros)
+* É usado para escrever e ler da memoria de maneiro muito performática
+* Armazena os dados de maneira binária
