@@ -30,3 +30,19 @@
 * É uma representação de um espaço na memória do computador usado para transitar dados de maneira muito rápida (achei parecido com ponteiros)
 * É usado para escrever e ler da memoria de maneiro muito performática
 * Armazena os dados de maneira binária
+
+## Parameters
+
+### Query parameters
+* São parâmetros nomeados enviados direto na URL da rota
+* Ex: ```http://localhost:3333/users?userId=3````
+* Note que o parâmetro tem um par chave valor (userId e 3 respectivamente)
+* São normalmente usados para filtrar, paginar e não são obrigatorios
+
+### Route parameters
+* São parâmetros não nomeados e também fazem parte da rota
+* Geralmente é usado para identificar um recurso
+
+### Reqeust body
+* Geralmente usados para envio de informações de formulários
+* Os dados enviados pelo request body passam pelo protocolo https, ou seja são mais seguros
