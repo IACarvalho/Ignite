@@ -1,6 +1,7 @@
 import { buildRoutePath } from "./utils/build-route-path.mjs"
 import { randomUUID } from 'node:crypto'
 import { Database } from "./database/index.mjs"
+import { parse } from 'csv-parse'
 
 const database = new Database()
 
@@ -41,6 +42,19 @@ export const routes = [
         created_at: new Date(),
         updated_at: null
       }
+      
+      database.insert('tasks',task)
+
+      return response
+        .writeHead(201)
+        .end(JSON.stringify(task))
+    }
+  },
+  {
+    method: 'POST',
+    path: buildRoutePath('/tasks/csv'),
+    handler: (request, response) => {
+
       
       database.insert('tasks',task)
 
